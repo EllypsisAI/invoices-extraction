@@ -1,0 +1,33 @@
+| Field | method1_rules | method2_gemini-3.5-flash-lite | method3_gemini-3.1-pro-preview |
+|---|---|---|---|
+| is_credit_note | 100% | 100% | 100% |
+| vendor | 100% | 100% | 100% |
+| vendor_street | 100% | 98% | 100% |
+| vendor_postal_code | 100% | 100% | 100% |
+| vendor_city | 100% | 100% | 100% |
+| vendor_country | 100% | 100% | 100% |
+| recipient | 100% | 100% | 100% |
+| recipient_street | 100% | 100% | 100% |
+| recipient_postal_code | 100% | 100% | 100% |
+| recipient_city | 100% | 100% | 100% |
+| recipient_country | 100% | 100% | 100% |
+| date | 100% | 100% | 100% |
+| due_date | 100% | 100% | 100% |
+| currency | 100% | 100% | 100% |
+| payment_terms | 100% | 100% | 100% |
+| bank_details | 100% | 64% | 2% |
+| subtotal | 74% | 78% | 80% |
+| vat_rate | 94% | 90% | 94% |
+| vat_amount | 88% | 92% | 94% |
+| discount_type | 100% | 98% | 100% |
+| discount_value | 100% | 98% | 100% |
+| discount_description | 80% | 52% | 52% |
+| discount_conditional | 100% | 84% | 96% |
+| discount_amount | 100% | 86% | 96% |
+| total | 78% | 78% | 78% |
+| line_description | 97% | 97% | 97% |
+| line_quantity | 100% | 99% | 100% |
+| line_unit_price | 95% | 93% | 95% |
+| line_vat_rate | 92% | 86% | 95% |
+| line_amount | 95% | 94% | 95% |
+| **Invoices fully correct** | 18/50 | 7/50 | 0/50 |

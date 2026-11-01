@@ -1,0 +1,156 @@
+invoice_id,line_no,field,expected,got,printed_on_invoice,invoice_consistency
+INV-2026-0001,,discount_description,early payment discount,Less 2% early payment discount,,correct
+INV-2026-0001,,discount_conditional,false,true,,correct
+INV-2026-0001,,discount_amount,4204.32,0.0,,correct
+INV-2026-0002,,discount_description,early payment discount,2% early payment discount,,total_error
+INV-2026-0002,,discount_conditional,false,true,,total_error
+INV-2026-0002,,discount_amount,3107.01,0.0,,total_error
+INV-2026-0002,,total,183313.83,188813.24,188813.24,total_error
+INV-2026-0002,1,line_vat_rate,0.20,,,
+INV-2026-0002,2,line_vat_rate,0.20,,,
+INV-2026-0002,3,line_vat_rate,0.20,,,
+INV-2026-0002,4,line_vat_rate,0.20,,,
+INV-2026-0002,5,line_vat_rate,0.20,,,
+INV-2026-0002,6,line_vat_rate,0.20,,,
+INV-2026-0003,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0004,,bank_details,Bank Austria | IBAN: AT88 1954 3276 2301 3199 | BIC: BKAUATWWXXX,Bank: Bank Austria | IBAN: AT88 1954 3276 2301 3199 | BIC: BKAUATWWXXX,,total_error
+INV-2026-0004,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,total_error
+INV-2026-0004,,total,222953.88,218494.8,218494.80,total_error
+INV-2026-0006,,discount_description,early payment discount,5% early payment discount,,subtotal_error
+INV-2026-0006,,discount_conditional,false,true,,subtotal_error
+INV-2026-0006,,discount_amount,645.94,0,,subtotal_error
+INV-2026-0007,,bank_details,HSBC UK | IBAN: GB46 3948 0242 2322 9834 76 | BIC: HBUKGB4BXXX,Bank: HSBC UK | IBAN: GB46 3948 0242 2322 9834 76 | BIC: HBUKGB4BXXX,,correct
+INV-2026-0007,,discount_description,adjustment per framework agreement ref. FA-2023-585,adjustment per framework agreement ref. FA-2023-585 (-7.5%),,correct
+INV-2026-0007,1,quantity,1,50,,
+INV-2026-0007,1,unit_price,39758.60,795.172,,
+INV-2026-0008,,bank_details,Barclays | IBAN: GB77 1413 7186 7225 0145 01 | BIC: BARCGB22XXX,Bank: Barclays | IBAN: GB77 1413 7186 7225 0145 01 | BIC: BARCGB22XXX,,correct
+INV-2026-0008,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0009,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0010,,bank_details,Barclays | IBAN: GB10 4886 3703 5516 1208 91 | BIC: BARCGB22XXX,Bank: Barclays | IBAN: GB10 4886 3703 5516 1208 91 | BIC: BARCGB22XXX,,correct
+INV-2026-0010,,discount_description,early payment discount,2% early payment discount,,correct
+INV-2026-0010,,discount_conditional,false,true,,correct
+INV-2026-0010,,discount_amount,3889.77,0.0,,correct
+INV-2026-0011,,bank_details,Bank Austria | IBAN: AT40 5740 1644 5150 3816 | BIC: BKAUATWWXXX,Bank: Bank Austria | IBAN: AT40 5740 1644 5150 3816 | BIC: BKAUATWWXXX,,subtotal_error
+INV-2026-0011,,subtotal,5797.30,5807.3,5807.30,subtotal_error
+INV-2026-0011,1,unit_price,5797.30,5807.3,,
+INV-2026-0011,1,amount,5797.30,5807.3,,
+INV-2026-0012,,total,159868.63,163066.0,163066.00,total_error
+INV-2026-0013,1,quantity,1,2,,
+INV-2026-0013,1,unit_price,15743.90,7871.94,,
+INV-2026-0014,3,description,Professional indemnity insurance — pro rata,For Professional indemnity insurance — pro rata,,
+INV-2026-0015,,subtotal,133265.50,159918.6,133275.50,subtotal_error
+INV-2026-0015,,vat_rate,0.20,,,subtotal_error
+INV-2026-0015,,vat_amount,26653.10,0.0,,subtotal_error
+INV-2026-0015,1,unit_price,30005.60,36006.72,,
+INV-2026-0015,1,line_vat_rate,0.20,,,
+INV-2026-0015,1,amount,30005.60,36006.72,,
+INV-2026-0015,2,unit_price,44823.30,53787.96,,
+INV-2026-0015,2,line_vat_rate,0.20,,,
+INV-2026-0015,2,amount,44823.30,53787.96,,
+INV-2026-0015,3,unit_price,24924.90,29909.88,,
+INV-2026-0015,3,line_vat_rate,0.20,,,
+INV-2026-0015,3,amount,24924.90,29909.88,,
+INV-2026-0015,4,unit_price,6573.80,7888.56,,
+INV-2026-0015,4,line_vat_rate,0.20,,,
+INV-2026-0015,4,amount,6573.80,7888.56,,
+INV-2026-0015,5,unit_price,6957.90,8349.48,,
+INV-2026-0015,5,line_vat_rate,0.20,,,
+INV-2026-0015,5,amount,6957.90,8349.48,,
+INV-2026-0015,6,unit_price,399.60,479.52,,
+INV-2026-0015,6,line_vat_rate,0.20,,,
+INV-2026-0015,6,amount,19980.00,23976.0,,
+INV-2026-0016,,bank_details,HSBC UK | IBAN: GB07 1357 9685 5164 3596 79 | BIC: HBUKGB4BXXX,Bank: HSBC UK | IBAN: GB07 1357 9685 5164 3596 79 | BIC: HBUKGB4BXXX,,total_error
+INV-2026-0016,,total,-146179.20,-144717.41,-144717.41,total_error
+INV-2026-0018,,subtotal,191222.20,191182.2,191172.20,subtotal_error
+INV-2026-0018,,vat_amount,38244.44,38236.44,,subtotal_error
+INV-2026-0018,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,subtotal_error
+INV-2026-0019,,discount_description,rebate per agreement,agreed rebate,,correct
+INV-2026-0021,,subtotal,260051.20,260061.2,260061.20,subtotal_error
+INV-2026-0021,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,subtotal_error
+INV-2026-0022,,bank_details,UBS | IBAN: CH87 0969 9010 2475 8331 8 | BIC: UBSWCHZH80A,Bank: UBS | IBAN: CH87 0969 9010 2475 8331 8 | BIC: UBSWCHZH80A,,correct
+INV-2026-0024,,subtotal,7590.00,7600.0,7600.00,subtotal_error
+INV-2026-0024,,discount_description,early payment discount,10% early payment discount,,subtotal_error
+INV-2026-0024,,discount_conditional,false,true,,subtotal_error
+INV-2026-0024,,discount_amount,759.00,0.0,,subtotal_error
+INV-2026-0025,,total,13563.84,13156.92,13156.92,total_error
+INV-2026-0026,,discount_description,early payment discount,5% early payment discount,,total_error
+INV-2026-0026,,discount_conditional,false,true,,total_error
+INV-2026-0026,,total,391999.00,384159.02,384159.02,total_error
+INV-2026-0027,,vat_rate,0.20,,,correct
+INV-2026-0027,,discount_description,adjustment per framework agreement ref. FA-2021-364,adjustment per framework agreement ref. FA-2021-364: -7.5%,,correct
+INV-2026-0027,1,line_vat_rate,0.20,,,
+INV-2026-0027,2,line_vat_rate,0.20,,,
+INV-2026-0027,3,line_vat_rate,0.20,,,
+INV-2026-0028,,bank_details,Lloyds Bank | IBAN: GB68 9888 7694 7514 8870 00 | BIC: LOYDGB21XXX,Bank: Lloyds Bank | IBAN: GB68 9888 7694 7514 8870 00 | BIC: LOYDGB21XXX,,correct
+INV-2026-0029,,subtotal,7398.00,8877.6,7398.00,correct
+INV-2026-0029,,vat_rate,0.20,,,correct
+INV-2026-0029,,vat_amount,1479.60,0.0,,correct
+INV-2026-0029,1,unit_price,369.90,443.88,,
+INV-2026-0029,1,line_vat_rate,0.20,,,
+INV-2026-0029,1,amount,7398.00,8877.6,,
+INV-2026-0030,,discount_description,adjustment per framework agreement ref. FA-2024-720,adjustment per framework agreement ref. FA-2024-720: -7.5%,,total_error
+INV-2026-0030,,total,83896.42,82218.49,82218.49,total_error
+INV-2026-0031,,bank_details,Raiffeisen Schweiz | IBAN: CH80 0778 8876 6855 5601 7 | BIC: RAIFCH22XXX,Bank: Raiffeisen Schweiz | IBAN: CH80 0778 8876 6855 5601 7 | BIC: RAIFCH22XXX,,correct
+INV-2026-0031,,discount_description,early payment discount,5% early payment discount,,correct
+INV-2026-0031,,discount_conditional,false,true,,correct
+INV-2026-0031,,discount_amount,304.55,0.0,,correct
+INV-2026-0032,,vendor_street,47 rue des Lilas Perdus,47 rue des Lilas,,subtotal_error
+INV-2026-0032,,subtotal,265897.40,265907.4,265907.40,subtotal_error
+INV-2026-0032,,discount_description,rebate per agreement,agreed rebate,,subtotal_error
+INV-2026-0034,,bank_details,Barclays | IBAN: GB03 0671 4606 3958 7528 22 | BIC: BARCGB22XXX,Bank: Barclays | IBAN: GB03 0671 4606 3958 7528 22 | BIC: BARCGB22XXX,,correct
+INV-2026-0034,,subtotal,361675.10,434010.12,361675.10,correct
+INV-2026-0034,,vat_rate,0.20,,,correct
+INV-2026-0034,,vat_amount,72335.02,0.0,,correct
+INV-2026-0034,1,unit_price,34589.70,41507.64,,
+INV-2026-0034,1,line_vat_rate,0.20,,,
+INV-2026-0034,1,amount,34589.70,41507.64,,
+INV-2026-0034,2,unit_price,268.80,322.56,,
+INV-2026-0034,2,line_vat_rate,0.20,,,
+INV-2026-0034,2,amount,26880.00,32256.0,,
+INV-2026-0034,3,unit_price,46752.50,56103.0,,
+INV-2026-0034,3,line_vat_rate,0.20,,,
+INV-2026-0034,3,amount,187010.00,224412.0,,
+INV-2026-0034,4,unit_price,37731.80,45278.16,,
+INV-2026-0034,4,line_vat_rate,0.20,,,
+INV-2026-0034,4,amount,113195.40,135834.48,,
+INV-2026-0035,,bank_details,Barclays | IBAN: GB08 6223 0280 1322 1377 65 | BIC: BARCGB22XXX,Bank: Barclays | IBAN: GB08 6223 0280 1322 1377 65 | BIC: BARCGB22XXX,,subtotal_error
+INV-2026-0035,,subtotal,16629.30,16679.3,16679.30,subtotal_error
+INV-2026-0037,,bank_details,HSBC UK | IBAN: GB14 6759 3441 9123 0726 92 | BIC: HBUKGB4BXXX,Bank: HSBC UK | IBAN: GB14 6759 3441 9123 0726 92 | BIC: HBUKGB4BXXX,,correct
+INV-2026-0038,,bank_details,BNP Paribas | IBAN: FR26 4743 3848 2279 7519 6871 936 | BIC: BNPAFRPPXXX,Bank: BNP Paribas | IBAN: FR26 4743 3848 2279 7519 6871 936 | BIC: BNPAFRPPXXX,,total_error
+INV-2026-0038,,discount_description,early payment discount,5% early payment discount,,total_error
+INV-2026-0038,,discount_conditional,false,true,,total_error
+INV-2026-0038,,discount_amount,15919.08,0.0,,total_error
+INV-2026-0038,,total,366138.72,362477.33,362477.33,total_error
+INV-2026-0038,2,description,Photocopier toner (see framework agreement),For Photocopier toner (see framework agreement),,
+INV-2026-0038,3,description,"Translation services (EN ↔ DE, 12k words)","For Translation services (EN ↔ DE, 12k words)",,
+INV-2026-0038,4,description,Database optimisation retainer — March,For Database optimisation retainer — March,,
+INV-2026-0038,8,description,Consulting hours — Associate,For Consulting hours — Associate,,
+INV-2026-0040,,bank_details,HSBC UK | IBAN: GB66 4579 3810 0589 5047 59 | BIC: HBUKGB4BXXX,Bank: HSBC UK | IBAN: GB66 4579 3810 0589 5047 59 | BIC: HBUKGB4BXXX,,total_error
+INV-2026-0040,,total,490071.36,499872.79,499872.79,total_error
+INV-2026-0041,,total,159024.72,154253.98,154253.98,total_error
+INV-2026-0042,,bank_details,Lloyds Bank | IBAN: GB32 5645 9225 4202 6356 00 | BIC: LOYDGB21XXX,Bank: Lloyds Bank | IBAN: GB32 5645 9225 4202 6356 00 | BIC: LOYDGB21XXX,,correct
+INV-2026-0042,,discount_description,adjustment per framework agreement ref. FA-2021-895,adjustment per framework agreement ref. FA-2021-895 (-2.5%),,correct
+INV-2026-0043,,bank_details,UBS | IBAN: CH68 0125 9778 3946 9865 6 | BIC: UBSWCHZH80A,Bank: UBS | IBAN: CH68 0125 9778 3946 9865 6 | BIC: UBSWCHZH80A,,correct
+INV-2026-0044,,bank_details,Barclays | IBAN: GB36 3687 7371 5809 7097 82 | BIC: BARCGB22XXX,Bank: Barclays | IBAN: GB36 3687 7371 5809 7097 82 | BIC: BARCGB22XXX,,subtotal_error
+INV-2026-0044,,subtotal,118177.90,118167.9,118167.90,subtotal_error
+INV-2026-0044,,discount_description,adjustment per framework agreement ref. FA-2021-856,adjustment per framework agreement ref. FA-2021-856 (-7.5%),,subtotal_error
+INV-2026-0044,1,line_vat_rate,0.20,,,
+INV-2026-0044,2,description,Penetration testing — scope per SOW 2026-03,For Penetration testing — scope per SOW 2026-03,,
+INV-2026-0044,2,line_vat_rate,0.10,,,
+INV-2026-0044,3,line_vat_rate,0.10,,,
+INV-2026-0044,4,line_vat_rate,0.20,,,
+INV-2026-0044,5,description,Backup verification (annual),For Backup verification (annual),,
+INV-2026-0044,5,line_vat_rate,0.20,,,
+INV-2026-0045,,vat_rate,0.20,,,total_error
+INV-2026-0045,,total,411321.96,398982.3,398982.30,total_error
+INV-2026-0045,1,line_vat_rate,0.20,,,
+INV-2026-0045,2,line_vat_rate,0.20,,,
+INV-2026-0045,3,line_vat_rate,0.20,,,
+INV-2026-0045,4,line_vat_rate,0.20,,,
+INV-2026-0046,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0047,,subtotal,116551.90,116556.9,116556.90,subtotal_error
+INV-2026-0048,,discount_type,amount,trade_terms,,correct
+INV-2026-0048,,discount_value,4340.32,0.0,,correct
+INV-2026-0049,,bank_details,Erste Bank | IBAN: AT55 4404 1479 6100 9013 | BIC: GIBAATWWXXX,Bank: Erste Bank | IBAN: AT55 4404 1479 6100 9013 | BIC: GIBAATWWXXX,,correct
+INV-2026-0049,,discount_description,adjustment per framework agreement ref. FA-2025-608,adjustment per framework agreement ref. FA-2025-608 (-5%),,correct
+INV-2026-0050,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
