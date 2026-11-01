@@ -1,0 +1,88 @@
+invoice_id,line_no,field,expected,got,printed_on_invoice,invoice_consistency
+INV-2026-0002,,total,183313.83,188813.24,188813.24,total_error
+INV-2026-0003,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0004,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,total_error
+INV-2026-0004,,total,222953.88,218494.80,218494.80,total_error
+INV-2026-0006,,subtotal,12918.70,12922.87,12923.70,subtotal_error
+INV-2026-0006,,vat_amount,2583.74,2584.57,,subtotal_error
+INV-2026-0008,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0009,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0011,,subtotal,5797.30,5807.30,5807.30,subtotal_error
+INV-2026-0012,,total,159868.63,163066.00,163066.00,total_error
+INV-2026-0013,,subtotal,15743.90,15735.57,15733.90,subtotal_error
+INV-2026-0013,,vat_amount,3148.78,3147.11,,subtotal_error
+INV-2026-0015,,subtotal,133265.50,159928.60,133275.50,subtotal_error
+INV-2026-0015,,vat_rate,0.20,,,subtotal_error
+INV-2026-0015,,vat_amount,26653.10,,,subtotal_error
+INV-2026-0015,1,unit_price,30005.60,36006.72,,
+INV-2026-0015,1,line_vat_rate,0.20,,,
+INV-2026-0015,1,amount,30005.60,36006.72,,
+INV-2026-0015,2,unit_price,44823.30,53787.96,,
+INV-2026-0015,2,line_vat_rate,0.20,,,
+INV-2026-0015,2,amount,44823.30,53787.96,,
+INV-2026-0015,3,unit_price,24924.90,29909.88,,
+INV-2026-0015,3,line_vat_rate,0.20,,,
+INV-2026-0015,3,amount,24924.90,29909.88,,
+INV-2026-0015,4,unit_price,6573.80,7888.56,,
+INV-2026-0015,4,line_vat_rate,0.20,,,
+INV-2026-0015,4,amount,6573.80,7888.56,,
+INV-2026-0015,5,unit_price,6957.90,8349.48,,
+INV-2026-0015,5,line_vat_rate,0.20,,,
+INV-2026-0015,5,amount,6957.90,8349.48,,
+INV-2026-0015,6,unit_price,399.60,479.52,,
+INV-2026-0015,6,line_vat_rate,0.20,,,
+INV-2026-0015,6,amount,19980.00,23976.00,,
+INV-2026-0016,,total,-146179.20,-144717.41,-144717.41,total_error
+INV-2026-0018,,subtotal,191222.20,191180.53,191172.20,subtotal_error
+INV-2026-0018,,vat_amount,38244.44,38236.11,,subtotal_error
+INV-2026-0018,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,subtotal_error
+INV-2026-0019,,discount_description,rebate per agreement,agreed rebate,,correct
+INV-2026-0019,4,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0021,,subtotal,260051.20,260061.20,260061.20,subtotal_error
+INV-2026-0021,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,subtotal_error
+INV-2026-0024,,subtotal,7590.00,7600.00,7600.00,subtotal_error
+INV-2026-0025,,total,13563.84,13156.92,13156.92,total_error
+INV-2026-0026,,total,391999.00,384159.02,384159.02,total_error
+INV-2026-0029,,subtotal,7398.00,8877.60,7398.00,correct
+INV-2026-0029,,vat_rate,0.20,,,correct
+INV-2026-0029,,vat_amount,1479.60,,,correct
+INV-2026-0029,1,unit_price,369.90,443.88,,
+INV-2026-0029,1,line_vat_rate,0.20,,,
+INV-2026-0029,1,amount,7398.00,8877.60,,
+INV-2026-0030,,total,83896.42,82218.49,82218.49,total_error
+INV-2026-0032,,subtotal,265897.40,265907.40,265907.40,subtotal_error
+INV-2026-0032,,discount_description,rebate per agreement,agreed rebate,,subtotal_error
+INV-2026-0032,4,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0034,,subtotal,361675.10,434010.12,361675.10,correct
+INV-2026-0034,,vat_rate,0.20,,,correct
+INV-2026-0034,,vat_amount,72335.02,,,correct
+INV-2026-0034,1,unit_price,34589.70,41507.64,,
+INV-2026-0034,1,line_vat_rate,0.20,,,
+INV-2026-0034,1,amount,34589.70,41507.64,,
+INV-2026-0034,2,unit_price,268.80,322.56,,
+INV-2026-0034,2,line_vat_rate,0.20,,,
+INV-2026-0034,2,amount,26880.00,32256.00,,
+INV-2026-0034,3,unit_price,46752.50,56103.00,,
+INV-2026-0034,3,line_vat_rate,0.20,,,
+INV-2026-0034,3,amount,187010.00,224412.00,,
+INV-2026-0034,4,unit_price,37731.80,45278.16,,
+INV-2026-0034,4,line_vat_rate,0.20,,,
+INV-2026-0034,4,amount,113195.40,135834.48,,
+INV-2026-0035,,subtotal,16629.30,16679.30,16679.30,subtotal_error
+INV-2026-0038,,total,366138.72,362477.33,362477.33,total_error
+INV-2026-0038,3,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0039,1,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0040,,total,490071.36,499872.79,499872.79,total_error
+INV-2026-0041,,total,159024.72,154253.98,154253.98,total_error
+INV-2026-0041,5,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0043,4,description,"Translation services (EN ↔ DE, 12k words)","Translation services (EN « DE, 12k words)",,
+INV-2026-0044,,subtotal,118177.90,118167.90,118167.90,subtotal_error
+INV-2026-0044,1,line_vat_rate,0.20,,,
+INV-2026-0044,2,line_vat_rate,0.10,,,
+INV-2026-0044,3,line_vat_rate,0.10,,,
+INV-2026-0044,4,line_vat_rate,0.20,,,
+INV-2026-0044,5,line_vat_rate,0.20,,,
+INV-2026-0045,,total,411321.96,398982.30,398982.30,total_error
+INV-2026-0046,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0047,,subtotal,116551.90,116556.90,116556.90,subtotal_error
+INV-2026-0050,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
