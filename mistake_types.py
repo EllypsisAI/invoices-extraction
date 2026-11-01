@@ -20,6 +20,7 @@ TYPES = [  # (key, label, counts as a formatting difference only)
     ("printed_error", "Copied a subtotal or total that the invoice itself prints wrongly", False),
     ("vat_incl_no_rate", "Prices include VAT but no rate is printed: left gross, VAT blank or 0", False),
     ("discount_conditional", "Deducted early-payment discount treated as conditional (not deducted)", False),
+    ("discount_kind", "Discount recorded as a fixed amount instead of a percentage (amount still right)", False),
     ("vat_rate_missing", "VAT rate left blank although it can be inferred", False),
     ("invented_quantity", "Quantity or unit price invented from the description (\"50 seats\" -> qty 50)", False),
     ("mixed_vat", "Two VAT rates on one invoice: per-line rate not stated", False),
@@ -58,6 +59,8 @@ def classify(m, inv, invoice_mistakes):
         if f == "total" and "discount_conditional" in invoice_mistakes:
             return "discount_conditional"            # total left without the discount
         return "printed_error"
+    if f in ("discount_type", "discount_value") and "discount_conditional" not in invoice_mistakes:
+        return "discount_kind"
     if f in ("discount_conditional", "discount_amount", "discount_type", "discount_value"):
         return "discount_conditional"
     if f in ("line_vat_rate", "vat_rate"):

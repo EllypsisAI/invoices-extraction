@@ -114,17 +114,17 @@ def to_invoice(data):
     return data
 
 
-def call(client, model, pdf_path, raw_path):
+def call(client, model, pdf_path, raw_path, prompt=PROMPT, schema=SCHEMA):
     config = types.GenerateContentConfig(
         temperature=0,
         response_mime_type="application/json",
-        response_json_schema=SCHEMA,
+        response_json_schema=schema,
     )
     part = types.Part.from_bytes(data=pdf_path.read_bytes(), mime_type="application/pdf")
     for attempt in range(6):
         t0 = time.time()
         try:
-            resp = client.models.generate_content(model=model, contents=[part, PROMPT], config=config)
+            resp = client.models.generate_content(model=model, contents=[part, prompt], config=config)
         except Exception as e:                       # rate limit or server hiccup: wait and retry
             msg = str(e)
             if attempt == 5 or not any(c in msg for c in ("429", "500", "503", "RESOURCE_EXHAUSTED", "UNAVAILABLE")):

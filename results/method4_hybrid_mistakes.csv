@@ -1,0 +1,57 @@
+invoice_id,line_no,field,expected,got,printed_on_invoice,invoice_consistency
+INV-2026-0002,,discount_type,percentage,amount,,total_error
+INV-2026-0002,,discount_value,0.02,3107.01,,total_error
+INV-2026-0003,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0004,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,total_error
+INV-2026-0008,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0009,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0010,,discount_type,percentage,amount,,correct
+INV-2026-0010,,discount_value,0.02,3889.77,,correct
+INV-2026-0015,,subtotal,133265.50,159918.60,133275.50,subtotal_error
+INV-2026-0015,,vat_rate,0.20,,,subtotal_error
+INV-2026-0015,,vat_amount,26653.10,,,subtotal_error
+INV-2026-0015,1,unit_price,30005.60,36006.72,,
+INV-2026-0015,1,line_vat_rate,0.20,,,
+INV-2026-0015,1,amount,30005.60,36006.72,,
+INV-2026-0015,2,unit_price,44823.30,53787.96,,
+INV-2026-0015,2,line_vat_rate,0.20,,,
+INV-2026-0015,2,amount,44823.30,53787.96,,
+INV-2026-0015,3,unit_price,24924.90,29909.88,,
+INV-2026-0015,3,line_vat_rate,0.20,,,
+INV-2026-0015,3,amount,24924.90,29909.88,,
+INV-2026-0015,4,unit_price,6573.80,7888.56,,
+INV-2026-0015,4,line_vat_rate,0.20,,,
+INV-2026-0015,4,amount,6573.80,7888.56,,
+INV-2026-0015,5,unit_price,6957.90,8349.48,,
+INV-2026-0015,5,line_vat_rate,0.20,,,
+INV-2026-0015,5,amount,6957.90,8349.48,,
+INV-2026-0015,6,unit_price,399.60,479.52,,
+INV-2026-0015,6,line_vat_rate,0.20,,,
+INV-2026-0015,6,amount,19980.00,23976.0,,
+INV-2026-0018,,discount_description,2/10 net 30 — conditional early-payment discount,Payment terms,,subtotal_error
+INV-2026-0019,,discount_description,rebate per agreement,agreed rebate,,correct
+INV-2026-0021,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,subtotal_error
+INV-2026-0029,,subtotal,7398.00,8877.6,7398.00,correct
+INV-2026-0029,,vat_rate,0.20,,,correct
+INV-2026-0029,,vat_amount,1479.60,,,correct
+INV-2026-0029,1,unit_price,369.90,443.88,,
+INV-2026-0029,1,line_vat_rate,0.20,,,
+INV-2026-0029,1,amount,7398.00,8877.6,,
+INV-2026-0032,,discount_description,rebate per agreement,agreed rebate,,subtotal_error
+INV-2026-0034,,subtotal,361675.10,434010.12,361675.10,correct
+INV-2026-0034,,vat_rate,0.20,,,correct
+INV-2026-0034,,vat_amount,72335.02,,,correct
+INV-2026-0034,1,unit_price,34589.70,41507.64,,
+INV-2026-0034,1,line_vat_rate,0.20,,,
+INV-2026-0034,1,amount,34589.70,41507.64,,
+INV-2026-0034,2,unit_price,268.80,322.56,,
+INV-2026-0034,2,line_vat_rate,0.20,,,
+INV-2026-0034,2,amount,26880.00,32256.0,,
+INV-2026-0034,3,unit_price,46752.50,56103.0,,
+INV-2026-0034,3,line_vat_rate,0.20,,,
+INV-2026-0034,3,amount,187010.00,224412.0,,
+INV-2026-0034,4,unit_price,37731.80,45278.16,,
+INV-2026-0034,4,line_vat_rate,0.20,,,
+INV-2026-0034,4,amount,113195.40,135834.48,,
+INV-2026-0046,,discount_description,2/10 net 30 — conditional early-payment discount,2/10 net 30,,correct
+INV-2026-0050,,discount_description,2/10 net 30 — conditional early-payment discount,,,correct

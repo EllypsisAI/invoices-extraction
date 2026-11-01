@@ -52,6 +52,9 @@ def flatten(inv):
         "discount_amount": inv.get("discount_amount"),
         "total": inv.get("total"),
     }
+    for k in ("review_flag", "review_notes"):      # Method 4 only
+        if k in inv:
+            head[k] = inv[k]
     for who in ("vendor", "recipient"):
         addr = inv.get(f"{who}_address") or {}
         for part in ("street", "postal_code", "city"):
@@ -77,11 +80,11 @@ def flatten(inv):
     return rows
 
 
-def write_csv(invoices, path):
+def write_csv(invoices, path, extra=()):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=COLUMNS)
+        w = csv.DictWriter(f, fieldnames=COLUMNS + list(extra))
         w.writeheader()
         for inv in invoices:
             w.writerows(flatten(inv))
